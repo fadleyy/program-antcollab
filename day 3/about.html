@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+        },
+      },
+    }
+  </script>
+  <style>
+    #toggle:checked~label div.bulet {
+      transform: translateX(16px);
+    }
+  </style>
+</head>
+
+<body class="dark:bg-slate-950 overflow-x-hidden bg-slate-200 max-sm:overflow-x-hidden scroll-smooth">
+  <nav class="flex justify-between w-screen h-10 dark:bg-slate-400 items-center px-4 fixed top-0 z-50">
+    <div class="max-sm:text-sm dark:text-slate-200">
+      <ul class="flex gap-2">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="myweb.html">My web</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex max-sm:text-sm">
+      <span class="text-md text-slate-900 mr-2 dark:text-slate-200 ">Light</span>
+      <input type="checkbox" id="toggle" class="hidden">
+      <label for="toggle">
+        <div class="w-9 h-5 bg-slate-900 rounded-full flex items-center p-px cursor-pointer dark:bg-slate-200">
+          <div class="w-4 h-4 bg-white rounded-full bulet dark:bg-slate-900"></div>
+        </div>
+      </label>
+      <span class="text-md text-slate-900 ml-2 dark:text-slate-200 ">Dark</span>
+    </div>
+  </nav>
+
+  <div class="h-screen w-[90%] mt-20 mx-auto max-md:w-full px-2">
+    <h1 class="text-center text-7xl font-black max-sm:text-4xl dark:text-slate-200 max-md:text-5xl">Hi, I'm Fadli <br>A
+      Web
+      Devlopment
+    </h1>
+    <div
+      class="flex flex-1 justify-between p-20 mt-10 max-sm:px-0 max-sm:flex-wrap max-sm:justify-center gap-6 max-md:p-0">
+
+      <img src="./img/user.png" alt="fadli"
+        class="rounded-t-full object-cover object-center max-sm:w-[300px] h-[300px] max-md:w-[300px]" />
+
+      <div class="w-[600px] h-[300px] p-4 bg-slate-900 my-auto overflow-hidden relative rounded-3xl dark:bg-slate-200 ">
+        <div
+          class="w-full h-full bg-slate-900 dark:bg-slate-100 absolute top-0 left-0 transition duration-300 ease-out text-center flex items-center justify-center text-slate-200 dark:text-slate-900"
+          id="card">ClickHere!</div>
+        <h2 class="text-center text-xl font-bold text text-slate-100 dark:text-slate-900">About Me</h2>
+        <p class="text-slate-100 max-sm:text-md mt-3 dark:text-slate-900">Lorem ipsum dolor sit amet consectetur
+          adipisicing
+          elit. Obcaecati,
+          fuga
+          aliquam laborum voluptatem error beatae? Possimus error rem ipsam ad ut quam eius impedit cum quod libero, at
+          nulla quia voluptates iure fugit maxime facere deserunt quibusdam placeat atque repudiandae natus. Fuga at
+          aspernatur laboriosam accusamus ducimus hic aliqua nobis!</p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="w-[90%] h-max mx-auto bg-slate-900 text-slate-100 px-10 group  py-5 dark:bg-slate-200 dark:text-slate-900 cursor-pointer">
+    <h2 class="text-center">My Skill</h2>
+    <p class="text-center">Point the cursor here</p>
+    <div>
+      <ul>
+        <li>
+          <div>
+            HTML
+            <div class="w-full py-[15px] bg-slate-100 text-slate-50 text-center  rounded-r-full dark:bg-slate-900">
+              <div
+                class="group-hover:w-[99%] w-0 transition-all duration-500 ease-in bg-slate-900 ml-2 rounded-r-full mr-1 dark:bg-slate-200 dark:text-slate-900"
+                id="bar">
+                100%
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            CSS
+            <div class="w-full py-[15px] bg-slate-100 text-slate-50 text-center group rounded-r-full dark:bg-slate-900">
+              <div
+                class="group-hover:w-[95%] w-0 transition-all duration-500 delay-200 ease-in bg-slate-900 ml-2 rounded-r-full mr-1 dark:bg-slate-200 dark:text-slate-900"
+                id="bar">
+                90%
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            JS
+            <div class="w-full py-[15px] bg-slate-100 text-slate-50 text-center group rounded-r-full dark:bg-slate-900">
+              <div
+                class="group-hover:w-[95%] w-0 transition-all duration-500 delay-300 ease-in bg-slate-900 ml-2 rounded-r-full mr-1 dark:bg-slate-200 dark:text-slate-900"
+                id="bar">
+                90%
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            Taiwindcss
+            <div class="w-full py-[15px] bg-slate-100 text-slate-50 text-center group rounded-r-full dark:bg-slate-900">
+              <div
+                class="group-hover:w-[90%] w-0 transition-all duration-500 delay-300 ease-in bg-slate-900 ml-2 rounded-r-full mr-1 dark:bg-slate-200 dark:text-slate-900"
+                id="bar">
+                80%
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            Nodejs
+            <div class="w-full py-[15px] bg-slate-100 text-slate-50 text-center group rounded-r-full dark:bg-slate-900">
+              <div
+                class="group-hover:w-[80%] w-0 transition-all duration-500 delay-300 ease-in bg-slate-900 ml-2 rounded-r-full mr-1 dark:bg-slate-200 dark:text-slate-900"
+                id="bar">
+                70%
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a href=""
+        class="fixed bottom-2 right-5 w-10 h-10 bg-slate-900 dark:bg-slate-200 rounded-full flex justify-center items-center text-3xl ">^</a>
+
+      <script src="./js/card.js"></script>
+      <script src="./js/darkmode.js"></script>
+</body>
+
+</html>

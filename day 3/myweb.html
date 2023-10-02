@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myweb page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            opset: {
+              '0%, 100%': { transform: 'translateY(-105%)' },
+              '50%': { transform: 'translateY(0)' },
+            },
+          },
+          animation: {
+            'opset': 'opset 1s infinite'
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="overflow-hidden">
+  <div class="w-80 h-80 bg-red-400 z-10 rounded-full absolute -left-20 -top-5"></div>
+
+  <div class="w-80 h-80 bg-green-400 z-10 rounded-full absolute -right-20 -top-5"></div>
+
+  <div class="w-80 h-80 bg-indigo-400 z-10 rounded-full absolute -right-20 -bottom-5"></div>
+
+  <div class="w-80 h-80 bg-teal-500 z-10 rounded-full absolute -left-20 -bottom-5"></div>
+
+  <div
+    class="w-screen h-screen bg-slate-900/90 flex justify-center items-center z-50 absolute top-0 backdrop-blur-[4rem]">
+
+    <div class="w-52 h-52 flex justify-center items-center flex-col group">
+
+      <div class="w-6 h-6 rounded-full bg-slate-100  animate-opset"></div>
+
+      <h1 class="text-2xl font-extrabold group-hover:text-slate-200">My <span
+          class="text-slate-200 group-hover:text-black">Portofolio</span></h1>
+      <div class="gap-4 flex mt-6">
+        <a href="about.html" class="hover:text-slate-400 hover:border-b transition-all ease-in">About</a>
+        <a href="myweb.html"
+          class="hover:text-slate-400 hover:border-b transition-all ease-in-out duration-500">Myweb</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
